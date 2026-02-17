@@ -22,8 +22,20 @@
             background-color: #e3f2fd; /* Biru muda */
             color: #0d47a1; /* Biru gelap */
             text-align: center;
-            padding: 40px 20px;
+            padding: 20px;
             border-bottom: 3px solid #90caf9;
+        }
+        .header-image {
+            width: 100%;
+            max-height: 300px;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .header-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Agar gambar menyesuaikan tanpa distorsi */
         }
         header h1 {
             font-size: 2.5em;
@@ -88,13 +100,19 @@
             header h1 {
                 font-size: 2em;
             }
+            .header-image {
+                max-height: 200px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="icon">📚</div>
+            <div class="header-image">
+                <img src="header-photo.jpg" alt="Foto Header Bimbingan Belajar"> <!-- Ganti dengan path foto Anda -->
+            </div>
+            <div class="icon">📚👶</div>
             <h1>Bimbingan Belajar Daring Sekolah Dasar</h1>
             <p>Belajar Seru dan Menyenangkan dari Rumah! 🏠✨</p>
         </div>
