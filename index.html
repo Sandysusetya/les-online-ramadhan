@@ -1,184 +1,221 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bimbingan Belajar Daring Sekolah Dasar</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa; /* Abu-abu muda */
-            color: #495057; /* Abu-abu gelap */
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        header {
-            background-color: #e3f2fd; /* Biru muda */
-            color: #0d47a1; /* Biru gelap */
-            text-align: center;
-            padding: 20px;
-            border-bottom: 3px solid #90caf9;
-        }
-        .header-image {
-            width: 30%;
-            max-height: 50px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        .header-image img {
-            width: 30%;
-            height: auto;
-            object-fit: cover; /* Agar gambar menyesuaikan tanpa distorsi */
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-        .icon {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-        section {
-            padding: 40px 0;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .card {
-            background-color: #ffffff;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .card h3 {
-            color: #0d47a1;
-            margin-bottom: 10px;
-        }
-        .biaya .grid {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
-        button {
-            background-color: #1976d2; /* Biru */
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-            margin-top: 10px;
-        }
-        button:hover {
-            background-color: #1565c0;
-        }
-        footer {
-            background-color: #e3f2fd;
-            color: #495057;
-            text-align: center;
-            padding: 20px;
-            border-top: 3px solid #90caf9;
-        }
-        @media (max-width: 768px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-            header h1 {
-                font-size: 2em;
-            }
-            .header-image {
-                max-height: 30px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bimbingan Belajar Daring SD</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 4px solid #90caf9;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.3em;
+    color: #0d47a1;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #0d47a1;
+}
+
+button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+
+.cta {
+    background: #1976d2;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+}
+
+.cta h2 {
+    margin-bottom: 15px;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 15px;
+    background: white;
+    color: #1976d2;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta a:hover {
+    background: #e3f2fd;
+}
+
+footer {
+    background: #e3f2fd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <div> 
-            <h2>﷽</h2>
-            <h1>Bimbingan Belajar Daring Sekolah Dasar 💻 </h1>
-            <p> Belajar Seru dan Menyenangkan dari Rumah! 🏠✨</p>
+
+<header>
+    <h2>﷽</h2>
+    <h1>Bimbingan Belajar Daring Sekolah Dasar 💻</h1>
+    <p>Belajar Seru & Menyenangkan dari Rumah! 🏠✨</p>
+</header>
+
+<section class="container">
+    <h2 style="text-align:center; color:#0d47a1;">Program 🎓</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🧸 Kelompok A (6–8 Tahun)</h3>
+            <p>Belajar dasar membaca, menulis, dan matematika sederhana dengan metode menyenangkan.</p>
         </div>
-    </header>
 
-    <section class="container">
-        <h2 style="text-align: center; color: #0d47a1;">Program 🎓</h2>
-        <div class="grid">
-            <div class="card">
-                <div class="icon">🧸</div>
-                <h3>Kelompok A (Usia 6-8 Tahun)</h3>
-                <p>Belajar dasar membaca, menulis, dan matematika sederhana.</p>
-            </div>
-            <div class="card">
-                <div class="icon">🧕🏻</div>
-                <h3>Kelompok B (Usia 8-10 Tahun)</h3>
-                <p>Mengembangkan keterampilan berpikir dan kreativitas.</p>
-            </div>
-            <div class="card">
-                <div class="icon">🚀👨🏻‍💻</div>
-                <h3>Kelompok C Usia 9-12 Tahun</h3>
-                <p>Persiapan ujian dan pembelajaran lanjutan.</p>
-            </div>
-            <div class="card">
-                <div class="icon">📅</div>
-                <h3>Jadwal: Selasa, Rabu, Kamis</h3>
-                <p>Sesi 1: 16.00-16.30 ⏰<br>Sesi 2: 16.30-17.00 ⏰<br>Sesi 3: 17.00-17.30 ⏰</p>
-            </div>
+        <div class="card">
+            <h3>🧕🏻 Kelompok B (8–10 Tahun)</h3>
+            <p>Mengembangkan keterampilan berpikir, kreativitas, dan pemahaman konsep lebih mendalam.</p>
         </div>
-    </section>
 
-    <section class="container">
-        <h2 style="text-align: center; color: #0d47a1;">Mata Pelajaran 🎯 </h2>
-        <div class="grid">
-            <div class="card">
-                <h1>🧮</h1>
-                <h3>Numerasi</h3>
-                <p text-align: justify >Berfokus kepada materi matematika dasar dan membangun rasa nyaman dan menyenangkan mempelajari angka, melatih menilhat pola dan pengambilan keputusan dari data yang ada, membantu anak memahami angka dan berhitung dalam kehidupan sehari-hari. Tidak hanya belajar matematika, tetapi juga melatih cara berpikir logis, teliti, dan percaya diri dalam menyelesaikan soal.
-
-Di bimbingan belajar online kami, materi dijelaskan secara sederhana, bertahap, dan mudah dipahami. Disertai contoh soal, pembahasan jelas, serta latihan rutin sesuai tingkat kemampuan anak.
-
-✨ Lebih seru lagi, tersedia latihan dengan games interaktif melalui platform website, sehingga anak bisa belajar sambil bermain. Belajar jadi lebih menyenangkan, tidak membosankan, dan membuat anak semakin semangat!
-
-Belajar dari rumah jadi lebih praktis, efektif, dan menyenangkan! 📚🎮</p>
-                <button>Daftar Sekarang</button>
-            </div>
-            <div class="card">
-                <h3>Literasi</h3>
-                📚📖
-                <p text-align: justify>membantu anak lebih lancar membaca, memahami isi bacaan, dan berani mengungkapkan pendapat. Literasi bukan hanya tentang bisa membaca, tetapi juga memahami, menceritakan kembali, dan menulis dengan baik.
-
-Di bimbingan belajar online kami, anak belajar membaca dengan metode yang mudah dipahami dan menyenangkan. Materi disesuaikan dengan usia dan kemampuan, dilengkapi latihan membaca, menulis, serta memahami cerita.
-
-✨ Tersedia juga latihan interaktif melalui games di platform website, sehingga anak bisa belajar sambil bermain dan tetap semangat.
-
-Belajar dari rumah jadi lebih praktis, nyaman, dan efektif. Literasi meningkat, percaya diri pun tumbuh! 📖✨ </p>
-                <button>Daftar Sekarang</button>
-            </div>
+        <div class="card">
+            <h3>🚀 Kelompok C (9–12 Tahun)</h3>
+            <p>Persiapan ujian dan penguatan materi sekolah secara bertahap dan terarah.</p>
         </div>
-    </section>
-    <-- price -->
-    <section> 
-    
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>Hubungi Kami: 📧 sandyfasil6@gmail.com | ✆ 0815-1187-0222</p>
-            <p>&copy; 2023 Bimbingan Belajar BENIMAN.</p>
+        <div class="card">
+            <h3>📅 Jadwal</h3>
+            <p>Selasa – Kamis<br>
+            16.00 – 17.30 WIB ⏰</p>
         </div>
-    </footer>
+    </div>
+</section>
+
+<section class="container">
+    <h2 style="text-align:center; color:#0d47a1;">Mata Pelajaran 🎯</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🧮 Numerasi</h3>
+            <p>
+            Membantu anak memahami angka dan berhitung dalam kehidupan sehari-hari.
+            Melatih berpikir logis, teliti, dan percaya diri dalam menyelesaikan soal.
+            </p>
+            <p>
+            Materi dijelaskan bertahap dan mudah dipahami, dilengkapi contoh soal
+            serta latihan interaktif melalui games di platform website.
+            </p>
+            <button onclick="window.location.href='https://wa.me/6281511870222'">
+                Daftar Sekarang
+            </button>
+        </div>
+
+        <div class="card">
+            <h3>📚 Literasi</h3>
+            <p>
+            Membantu anak lancar membaca, memahami isi bacaan,
+            serta berani menulis dan menyampaikan pendapat.
+            </p>
+            <p>
+            Dilengkapi latihan interaktif dan games edukatif
+            agar belajar lebih seru dan tidak membosankan.
+            </p>
+            <button onclick="window.location.href='https://wa.me/6281511870222'">
+                Daftar Sekarang
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="cta">
+        <h2>Yuk Daftarkan Putra-Putri Anda Sekarang! 🎉</h2>
+        <p>Tempat terbatas • Kelas kecil • Pembelajaran fokus & interaktif</p>
+        <a href="https://wa.me/6281511870222">Hubungi via WhatsApp</a>
+    </div>
+</section>
+
+<footer>
+    <p>📧 sandyfasil6@gmail.com | 📞 0815-1187-0222</p>
+    <p>&copy; <span id="year"></span> Bimbingan Belajar BENIMAN</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
